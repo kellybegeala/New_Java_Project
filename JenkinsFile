@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Archive') { 
             steps {
-                echo "I am in Archive stage" 
+                echo 1
             }
         }
     }
