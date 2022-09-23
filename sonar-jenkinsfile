@@ -8,7 +8,7 @@ node {
         sh "${mvnHome}/bin/mvn compile"
     }
     stage('Sonar-analysis') { 
-		withSonarQubeEnv('sonarqube project') {
+		withSonarQubeEnv('sonarqube-server') {
                 sh "${mvnHome}/bin/mvn sonar:sonar"
               }
     }
